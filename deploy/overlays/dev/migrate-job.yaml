@@ -13,4 +13,4 @@ spec:
       containers:
       - name: migrate
         image: busybox:1.37
-        command: ["sh", "-c", "echo migrating the schema; echo column already exists; exit 1"]
+        command: ["sh", "-c", "echo migrating the schema; sleep 5; echo done"]
